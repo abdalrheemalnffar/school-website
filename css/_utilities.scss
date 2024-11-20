@@ -1,0 +1,69 @@
+.countaner {
+    // 1170px الستاندر
+    width: 80%;
+    margin: auto;
+}
+
+aside{
+    background-color: $mainColor;
+    height: 100vh;
+    position: fixed;
+    z-index: 999999999;
+    top: 0;
+    left: -80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .aa{
+        position: absolute;
+        top: 30px;
+        right: 100px;
+        img{
+            width: 100px;
+            height: 30px;
+        }
+    }
+    i{
+        position: absolute;
+        cursor: pointer;
+        top: 30px;
+        right: 30px;
+        font-size: 20px !important;
+        color: #ffffff;
+        background-color: $subcolor;
+        padding: 10px;
+        border-radius: 50%;
+        // &:hover{
+
+        //     transform:rotateY('180deg');
+        // }
+    }
+    ul{
+        position: absolute;
+        top: 120px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        
+        li{
+            
+            position: relative;
+            a{
+                color: $mainColor;
+                background-color: white;
+                padding: 3px 12px ;
+                border-radius: 10px;
+                font-size: 20px; 
+                align-items: center;
+                font-weight: bold;
+                }
+            }
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    aside{
+        height: 150%;
+    }
+}

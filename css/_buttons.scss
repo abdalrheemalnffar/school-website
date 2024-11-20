@@ -1,0 +1,16 @@
+.btn-webasit {
+    display: inline-block;
+    background-color: $subcolor;
+    border: 2px solid $subcolor;
+    padding: 8px 50px;
+    color: #505050;
+    border-radius: 50px;
+    font-family: f-medium;
+    font-size: 23px;
+
+    &:hover {
+        background-color: white;
+        // color: $subcolor;
+        transition: all 0.5s linear;
+    }
+}
